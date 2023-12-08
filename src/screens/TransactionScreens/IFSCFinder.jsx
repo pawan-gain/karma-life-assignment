@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { toast } from "react-toastify";
 
-const IFSC_Finder = () => {
+const IFSCFinder = () => {
   const navigate = useNavigate();
 
   const [BankValue, setBankValue] = useState(null);
@@ -25,7 +25,7 @@ const IFSC_Finder = () => {
       toast.error("Please fill all fields correctly !!");
     }
 
-    navigate("/bank_details_form");
+    navigate("/bank-details-form");
   };
 
   return (
@@ -35,7 +35,7 @@ const IFSC_Finder = () => {
         {/* back btn */}
         <Link
           className="cursor-pointer absolute top-3 left-5 text-[2rem] bg-gray-100 shadow-sm hover:text-white hover:bg-black rounded-full duration-300 p-2 hover:shadow-md"
-          to="/bank_details_form"
+          to="/bank-details-form"
         >
           <IoMdArrowRoundBack />
         </Link>
@@ -100,4 +100,4 @@ const IFSC_Finder = () => {
   );
 };
 
-export default IFSC_Finder;
+export default IFSCFinder;

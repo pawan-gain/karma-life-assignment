@@ -3,7 +3,6 @@ import { BsBank } from "react-icons/bs";
 import { IoIosMore } from "react-icons/io";
 import { IoMdPhonePortrait } from "react-icons/io";
 import { IoScan } from "react-icons/io5";
-import { motion } from "framer-motion";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -24,7 +23,7 @@ const Home = () => {
     {
       icon: <BsBank />,
       title: "Bank Transfer",
-      path: "/bank_details_form",
+      path: "/bank-details-form",
       active: true,
     },
     {

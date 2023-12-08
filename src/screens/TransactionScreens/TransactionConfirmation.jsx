@@ -9,7 +9,7 @@ const TransactionConfirmation = () => {
     localStorage.getItem("transactions")
   ).reverse()[0];
 
-  const { amount, details, balance } = latestTrasaction;
+  const { amount, details } = latestTrasaction;
 
   let currentTime = new Date();
 

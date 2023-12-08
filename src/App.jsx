@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import BankDetailsForm from "./screens/Transaction_Screens/BankDetailsForm";
-import TransactionRequest from "./screens/Transaction_Screens/TransactionRequest";
+import BankDetailsForm from "./screens/TransactionScreens/BankDetailsForm";
+import TransactionRequest from "./screens/TransactionScreens/TransactionRequest";
 import Home from "./screens/Home";
 import { motion } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import TransactionConfirmation from "./screens/Transaction_Screens/TransactionConfirmation";
-import IFSC_Finder from "./screens/Transaction_Screens/IFSC_Finder";
+import TransactionConfirmation from "./screens/TransactionScreens/TransactionConfirmation";
+import IFSCFinder from "./screens/TransactionScreens/IFSCFinder";
 
 const App = () => {
   const containerMotion = {
@@ -48,17 +48,17 @@ const App = () => {
         {/* routes */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bank_details_form" element={<BankDetailsForm />} />
+          <Route path="/bank-details-form" element={<BankDetailsForm />} />
           <Route
-            path="/request_transaction"
+            path="/request-transaction"
             element={<TransactionRequest />}
           />
           <Route
-            path="/find_ifsc_code"
-            element={<IFSC_Finder />}
+            path="/find-ifsc-code"
+            element={<IFSCFinder />}
           />
           <Route
-          path="/confirm_transaction"
+          path="/confirm-transaction"
           element={<TransactionConfirmation />}
         />
         </Routes>

@@ -86,7 +86,7 @@ const BankDetailsForm = () => {
 
     setTimeout(() => {
       localStorage.setItem("beneficiary", JSON.stringify(beneficiary));
-      navigate("/request_transaction");
+      navigate("/request-transaction");
       setPennyCheckLoading(false);
       toast.success("Beneficiary Added.");
     }, 5000);

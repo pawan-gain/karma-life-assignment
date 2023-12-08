@@ -18,7 +18,7 @@ const TransactionRequest = () => {
   useEffect(() => {
     const getData = async () => {
       const response = await fetch(
-        `http://localhost:3000/ifsc/${details.IFSC}`
+        `http://ifsc.razorpay.com/${details.IFSC}`
       );
       const data = await response.json();
 
@@ -115,7 +115,7 @@ const TransactionRequest = () => {
         transactions.push({ details, amount, balance });
         localStorage.setItem("transactions", JSON.stringify(transactions));
 
-        navigate("/confirm_transaction");
+        navigate("/confirm-transaction");
       }, 5000);
     }
   };
